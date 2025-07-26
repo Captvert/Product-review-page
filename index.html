@@ -269,8 +269,12 @@
     font-weight: bold;
 }
 
-.crossed-price{
-    text-decoration: line-through solid white clamp(2px, 0.8vw, 2.03px);
+.crossed-price {
+    text-decoration-line: line-through;
+    /* Optional: set the color of the line */
+    text-decoration-color: white;
+    /* Set the thickness of the line, can use clamp for responsiveness */
+    text-decoration-thickness: clamp(2px, 0.8vw, 2.03px);
 }
 
 .package-price-numbers{
